@@ -12,13 +12,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>segmentfault-lesson-1</module>
+        <module>segmentfault-lesson-2</module>
     </modules>
 
     <groupId>com.sxzhongf</groupId>
     <artifactId>segmentfault-lesson</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>segmentfault lesson</name>
-    <description></description>
+    <description>Java 微服务实践 - Spring Boot 系列</description>
 
     <properties>
         <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
