@@ -13,6 +13,7 @@
     <modules>
         <module>segmentfault-lesson-1</module>
         <module>segmentfault-lesson-2</module>
+        <module>segmentfault-lesson-2-1</module>
     </modules>
 
     <groupId>com.sxzhongf</groupId>
