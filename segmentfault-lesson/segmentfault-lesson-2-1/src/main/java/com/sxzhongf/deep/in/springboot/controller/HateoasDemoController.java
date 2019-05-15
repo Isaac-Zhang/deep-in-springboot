@@ -44,6 +44,8 @@ public class HateoasDemoController {
 
     @GetMapping(path = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
     public User user() {
+//        user.add(linkTo(methodOn(HateoasDemoController.class).setUserName(user.getName())).withSelfRel());
+//        user.add(linkTo(methodOn(HateoasDemoController.class).setUserAge(user.getAge())).withSelfRel());
         return user;
     }
 
