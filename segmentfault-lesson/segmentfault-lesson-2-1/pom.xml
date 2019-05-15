@@ -6,13 +6,14 @@
         <artifactId>segmentfault-lesson</artifactId>
         <groupId>com.sxzhongf</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sxzhongf</groupId>
     <artifactId>segmentfault-lesson-2-1</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>lesson-2</name>
+    <name>lesson-2-1</name>
     <description>
         1. SpringBoot Rest
         2. HATEOAS
@@ -27,6 +28,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--Hypermedia As The Engine Of Application State-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
+        </dependency>
+        <!--
+            引入之后，我们的JSONRestController#getUser 返回到界面上会以XML的形式
+            如不引入，会显示JSON格式
+        -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
         </dependency>
 
         <dependency>
