@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot.controller;
+package com.sxzhongf.deep.in.controller;
 
 import lombok.Data;
 import org.springframework.hateoas.ResourceSupport;

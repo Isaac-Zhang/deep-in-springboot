@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot.listener;
+package com.sxzhongf.deep.in.listener;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRequestEvent;

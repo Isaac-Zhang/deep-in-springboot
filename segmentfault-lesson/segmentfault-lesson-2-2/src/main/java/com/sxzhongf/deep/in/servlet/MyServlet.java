@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot.servlet;
+package com.sxzhongf.deep.in.servlet;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;

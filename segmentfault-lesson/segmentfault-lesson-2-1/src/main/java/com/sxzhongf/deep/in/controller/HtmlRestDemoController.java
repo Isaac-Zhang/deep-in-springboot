@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot.controller;
+package com.sxzhongf.deep.in.controller;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

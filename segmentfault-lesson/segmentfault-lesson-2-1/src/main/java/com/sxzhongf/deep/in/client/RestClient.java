@@ -1,6 +1,6 @@
-package com.sxzhongf.deep.in.springboot.client;
+package com.sxzhongf.deep.in.client;
 
-import com.sxzhongf.deep.in.springboot.controller.User;
+import com.sxzhongf.deep.in.controller.User;
 import org.springframework.web.client.RestTemplate;
 
 /**

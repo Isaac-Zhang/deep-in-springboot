@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot.jsp;
+package com.sxzhongf.deep.in.jsp;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

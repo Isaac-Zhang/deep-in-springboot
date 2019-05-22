@@ -1,4 +1,4 @@
-package com.sxzhongf.deep.in.springboot;
+package com.sxzhongf.deep.in;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
