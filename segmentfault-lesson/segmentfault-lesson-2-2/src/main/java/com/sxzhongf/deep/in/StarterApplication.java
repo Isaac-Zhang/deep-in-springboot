@@ -5,10 +5,12 @@ import com.sxzhongf.deep.in.spring.boot.MyServletSpringboot;
 import com.sxzhongf.deep.in.spring.boot.filter.MyFilterSpringboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 import javax.servlet.DispatcherType;
@@ -30,7 +32,7 @@ import javax.servlet.DispatcherType;
                 , "com.sxzhongf.deep.in"
         }
 )
-public class StarterApplication {
+public class StarterApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(StarterApplication.class, args);
     }
@@ -61,5 +63,16 @@ public class StarterApplication {
 
         servletListenerRegistrationBean.setListener(new MyServletRequestListener());
         return servletListenerRegistrationBean;
+    }
+
+    /**
+     * 设置jsp需要配置的builder source
+     * @param builder
+     * @return
+     */
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        builder.sources(StarterApplication.class);
+        return builder;
     }
 }
